@@ -1,0 +1,64 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "eslint-plugin-tsdoc"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-typescript/base"
+  ],
+  "env": {
+    "browser": false,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    // disable the rule for all files
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/type-annotation-spacing": [
+      "error",
+      {
+        // This matches examples on
+        // https://www.typescriptlang.org/docs/handbook/2/functions.html
+        "before": false,
+        "after": true,
+        "overrides": {
+          "arrow": {
+            "before": true,
+            "after": true
+          }
+        }
+      }
+    ],
+    "comma-dangle": "off",
+    "import/no-extraneous-dependencies": 0,
+    "no-unused-vars": "warn",
+    "no-restricted-syntax": "off",
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    // note you must disable the base rule as it can report incorrect errors
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        "variables": true,
+        "functions": false,
+        "classes": false,
+        "enums": true,
+        "typedefs": true
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "radix": ["error", "as-needed"],
+    "tsdoc/syntax": "warn"
+  },
+  "parserOptions": {
+    "project": "./tsconfig-eslint.json",
+    "warnOnUnsupportedTypeScriptVersion": false
+  }
+}
