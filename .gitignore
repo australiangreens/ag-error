@@ -5,7 +5,9 @@
 
 # Node artifact files
 node_modules/
-dist/
+# Because we are pulling our package directly from bitbucket, rather than
+#building and using npm, we have to include /dist in source control
+#/dist
 
 # May contain secrets, but also machine-specific settings
 .env
@@ -29,7 +31,6 @@ dist/
 
 # Maven
 target/
-dist/
 
 # JetBrains IDE
 .idea/

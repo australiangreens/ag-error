@@ -15,6 +15,8 @@ class path starting at AgError. For example
 *candidate to put into a private repo, or rename and make into a public repo.*
 *For the momement however it is just copied between projects*
 
+TODO: This is also why the dist directory is included in the repository.
+
 ## Usage
 
 Define your errors as extending the AgError superclass, with the requirement
