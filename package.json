@@ -1,6 +1,6 @@
 {
   "name": "ag-error",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provides an AgError class to be used as part of a consistent error pattern across AG's backend and frontend js/ts apps.",
   "author": "The Australian Greens <webops@greens.org.au>",
   "contributors": [
@@ -35,6 +35,6 @@
     "jest-extended": "^0.11.5",
     "ts-jest": "^27.0.5",
     "typescript": "^4.3.5",
-    "ag-error-jest": "file:../ag-error-jest"
+    "ag-error-jest": "git+ssh://git@bitbucket.org:australian_greens/ag-error-jest.git#v0.1.0"
   }
 }
