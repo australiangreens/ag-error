@@ -15,7 +15,7 @@ const DEFAULT_GET_PROTOTYPE_CHAIN_OF_OPTIONS = {
  * @returns an array of prototype objects
  */
 export function getPrototypeChainOf(obj, options = {}) {
-    const opts = { ...DEFAULT_GET_PROTOTYPE_CHAIN_OF_OPTIONS, ...options };
+    const opts = Object.assign(Object.assign({}, DEFAULT_GET_PROTOTYPE_CHAIN_OF_OPTIONS), options);
     if (!obj) {
         if (obj === null && opts.includeNull)
             return [null];
@@ -59,7 +59,7 @@ const DEFAULT_GET_CLASS_CHAIN_OF_OPTIONS = {
  * @returns An array of constructor functions treated the same way of classes.
  */
 export function getClassChainOf(obj, options = {}) {
-    const opts = { ...DEFAULT_GET_CLASS_CHAIN_OF_OPTIONS, ...options };
+    const opts = Object.assign(Object.assign({}, DEFAULT_GET_CLASS_CHAIN_OF_OPTIONS), options);
     // Since an object's class is just the constructor of it's prototype, we can
     // just re-use getPrototypeChainOf and wrap the stopping functions
     delete opts.includeNull;

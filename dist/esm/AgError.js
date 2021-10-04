@@ -70,7 +70,7 @@ export class AgError extends Error {
         // We don't include Error, not just because it makes it longer than we want,
         // but because if minified Error's name might be different
         return getClassChainOf(this, { stopAfter: (x) => x === AgError })
-            .map((x) => x?.errorName ?? '???')
+            .map((x) => { var _a; return (_a = x === null || x === void 0 ? void 0 : x.errorName) !== null && _a !== void 0 ? _a : '???'; })
             .reverse()
             .join(':');
     }

@@ -2,7 +2,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es2020",
+    "target": "es2015",
     "outDir": "dist/cjs",
     // We don't need the declaration files in both places, they are basically
     // just for editor hinting. As per
