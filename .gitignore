@@ -5,9 +5,7 @@
 
 # Node artifact files
 node_modules/
-# Because we are pulling our package directly from bitbucket, rather than
-#building and using npm, we have to include /dist in source control
-#/dist
+dist/
 
 # May contain secrets, but also machine-specific settings
 .env
