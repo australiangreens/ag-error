@@ -7,7 +7,7 @@
     "Anthony Blond <anthony@unfinishedteleporter.com>"
   ],
   "license": "MIT",
-  "private": true,
+  "private": false,
   "type": "module",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
