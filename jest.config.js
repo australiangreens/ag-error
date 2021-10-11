@@ -11,7 +11,7 @@ export default {
   },
   "setupFilesAfterEnv": [
     "jest-extended",
-    "ag-error-jest"
+    "@australiangreens/ag-error-jest"
   ],
   "globals": {
     "ts-jest": {

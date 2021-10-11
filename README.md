@@ -101,8 +101,8 @@ At time of writing we are using private git repositories, not npm
 
 Making use of the package once installs works in the same way as
 [jest-extended](https://github.com/jest-community/jest-extended), relying on
-side-effects. Add `ag-error-jest` to your jest `setupFilesAfterEnv`
-configuration property. See [the jest
+side-effects. Add `@australiangreens/ag-error-jest` to your jest
+`setupFilesAfterEnv` configuration property. See [the jest
 docs](https://jestjs.io/docs/configuration) for details
 
 For example in `jest.config.js`:
@@ -110,7 +110,7 @@ For example in `jest.config.js`:
 ```js
 export default {
   //...
-  "setupFilesAfterEnv": ["ag-error-jest"],
+  "setupFilesAfterEnv": ["@australiangreens/ag-error-jest"],
   //...
 }
 ```
@@ -119,7 +119,7 @@ Alternatively if you already have a `./src/setupTests.ts` in your
 `setupFilesAfterEnv`, then you and add an import into that intead:
 
 ```ts
-import 'ag-error-test';
+import '@australiangreens/ag-error-jest';
 ```
 
 #### Using ag-error-jest

@@ -12,7 +12,12 @@
     "paths": {
       "*": ["node_modules/*"]
     },
-    "types": ["node", "jest", "jest-extended", "ag-error-jest"]
+    "types": [
+      "node",
+      "jest",
+      "jest-extended",
+      "@australiangreens/ag-error-jest"
+    ]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist", "src/**/*.test.ts"],

@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@australiangreens/ag-error-jest@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@australiangreens/ag-error-jest/-/ag-error-jest-0.1.4.tgz#b000588e3913d771b6f9d3ee1296409caa36e697"
-  integrity sha512-6iofoYmzLWYD5+787iJgMYw3jQzGV6EPLdCbz12hwGS+l/Zq4X/9Mha6tTOAHkn1EsQGphIm3EJrECt7pNDsVg==
+"@australiangreens/ag-error-jest@^0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@australiangreens/ag-error-jest/-/ag-error-jest-0.1.8.tgz#ac57a8fdd7344f4c540cf413bfaa212ad15118b6"
+  integrity sha512-NMGi0ZP+EsuW0X9d+dFYGCoJUI28mTBTVwqNs1qKYgfl7DwBxlckamFfAFs+29N860O7hokcp+mBsXPI5bpuWg==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
