@@ -8,15 +8,23 @@ minification or other renaming and `hierachical` getter which will be the full
 class path starting at AgError. For example
 "AgError:SomeBaseAppError:FooApiError".
 
+If using jest, it is recommended
+[@australiangreens/ag-error-jest](https://www.npmjs.com/package/@australiangreens/ag-error-jest)
+also be installed as a dev dependency to write tests for the subclasses.
+
 ## Installation
 
-**TODO**
-*This is a library/set of modules we re-use across our apps. It is a good*
-*candidate to put into a private repo, or rename and make into a public repo.*
-*For the momement however it is just copied between projects*
+With npm:
 
-TODO: This is also why the dist directory is included in the repository, but
-using a postinstall script would be a better option
+```sh
+npm install  @australiangreens/ag-error
+```
+
+With yarn:
+
+```sh
+yarn add @australiangreens/ag-error
+```
 
 ## Usage
 
@@ -28,7 +36,7 @@ For example
 
 ```ts
 // In SomeAppError.ts
-import { AgError } from '../path/to/lib/ag-error';
+import { AgError } from '@australiangreens/ag-error';
 
 export class SomeBaseAppError extends AgError {
   static errorName = 'SomeBaseAppError';
@@ -95,7 +103,17 @@ all the tests nececesary in one go, and is what `ag-error` uses internally.
 
 #### Installing ag-error-jest
 
-At time of writing we are using private git repositories, not npm
+With npm:
+
+```sh
+npm install --save-dev @australiangreens/ag-error-jest
+```
+
+With yarn:
+
+```sh
+yarn add --dev @australiangreens/ag-error-jest
+```
 
 #### Setup of ag-error-jest
 
