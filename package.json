@@ -1,6 +1,6 @@
 {
   "name": "@australiangreens/ag-error",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Provides an AgError class to be used as part of a consistent error pattern across AG's backend and frontend js/ts apps.",
   "author": "The Australian Greens <webops@greens.org.au>",
   "contributors": [
