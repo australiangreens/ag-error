@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@australiangreens/ag-error-jest@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@australiangreens/ag-error-jest/-/ag-error-jest-0.1.4.tgz#b000588e3913d771b6f9d3ee1296409caa36e697"
+  integrity sha512-6iofoYmzLWYD5+787iJgMYw3jQzGV6EPLdCbz12hwGS+l/Zq4X/9Mha6tTOAHkn1EsQGphIm3EJrECt7pNDsVg==
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -839,10 +844,6 @@ acorn@^8.2.4:
   version "8.5.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.5.0.tgz#4512ccb99b3698c752591e9bb4472e38ad43cee2"
   integrity sha512-yXbYeFy+jUuYd3/CDcg2NkIYE991XYX/bje7LmjJigUciaeO1JR4XxXgCIV1/Zc/dRuFEyw1L0pbA+qynJkW5Q==
-
-"ag-error-jest@git+ssh://git@bitbucket.org:australian_greens/ag-error-jest.git#v0.1.2":
-  version "0.1.2"
-  resolved "git+ssh://git@bitbucket.org:australian_greens/ag-error-jest.git#3b54281f022ae8f76a58072f6da78f27c46542d1"
 
 agent-base@6:
   version "6.0.2"
