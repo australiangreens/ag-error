@@ -65,8 +65,7 @@ export class AgError extends Error {
     // Unfortunately the solution that minimises code repetition is to suppress
     // the error
 
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore: Property 'errorName' does not exist on type 'Function'
+    // @ts-expect-error Property 'errorName' does not exist on type 'Function'
     return this.constructor.errorName;
   }
 

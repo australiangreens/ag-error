@@ -1,4 +1,3 @@
-/* eslint-disable max-classes-per-file */
 // UNITS TESTS
 
 import { getPrototypeChainOf, getClassChainOf } from './helpers';

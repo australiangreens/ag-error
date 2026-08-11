@@ -1,7 +1,7 @@
 type GetPrototypeChainOfOptions = {
   includeNull?: boolean;
-  stopBefore: (x: Record<string, unknown>) => boolean;
-  stopAfter: (x: Record<string, unknown>) => boolean;
+  stopBefore?: (x: Record<string, unknown>) => boolean;
+  stopAfter?: (x: Record<string, unknown>) => boolean;
 };
 
 const DEFAULT_GET_PROTOTYPE_CHAIN_OF_OPTIONS = {
