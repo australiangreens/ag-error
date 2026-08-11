@@ -42,7 +42,7 @@
     "ship": "pnpm publish --no-git-checks"
   },
   "devDependencies": {
-    "@australiangreens/ag-error-jest": "^0.1.8",
+    "@australiangreens/ag-error-jest": "^0.3.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.0.0",
     "eslint": "^9.36.0",
