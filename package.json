@@ -34,23 +34,26 @@
     "build": "pnpm build:esm && pnpm build:cjs && ./fixup.sh",
     "build:force": "rm -rf ./dist && pnpm build:esm && pnpm build:cjs && ./fixup.sh",
     "lint": "eslint --max-warnings 0 src",
-    "test": "jest",
-    "test:watch": "pnpm test --watch",
-    "test:coverage": "pnpm test --coverage",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "prepublishOnly": "pnpm lint && pnpm test && pnpm build:force",
     "release": "node scripts/release.js",
     "ship": "pnpm publish --no-git-checks"
   },
   "devDependencies": {
     "@australiangreens/ag-error-jest": "^0.4.0",
-    "@types/jest": "^30.0.0",
     "@types/node": "^24.0.0",
+    "@vitest/coverage-v8": "^4.1.10",
     "eslint": "^10.8.1",
-    "jest": "^30.0.0",
     "jest-extended": "^7.0.0",
-    "jest-mock": "^30.0.0",
-    "ts-jest": "^29.4.0",
     "typescript": "^6.0.0",
-    "typescript-eslint": "^8.0.0"
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^4.1.10"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": ["jest"]
+    }
   }
 }

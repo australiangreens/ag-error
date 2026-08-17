@@ -11,8 +11,8 @@
     "declaration": true,
     "skipLibCheck": true,
     "types": [
+      "vitest/globals",
       "node",
-      "jest",
       "jest-extended",
       "@australiangreens/ag-error-jest"
     ]
