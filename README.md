@@ -12,6 +12,14 @@ If using jest, it is recommended
 [@australiangreens/ag-error-jest](https://www.npmjs.com/package/@australiangreens/ag-error-jest)
 also be installed as a dev dependency to write tests for the subclasses.
 
+## Development setup
+
+Install [mise](https://mise.jdx.dev/), then install the project versions:
+
+```sh
+mise install
+```
+
 ## Installation
 
 With pnpm:
